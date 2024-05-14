@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img{
+    max-width: 100%;
+  }
+
+  body{
+    background-image: url('Images/image.png')  ;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+  }
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+
+  }
+  header {
+    background-color: #192637;
+    width: 100%;
+    height: 80px;
+    border-bottom:4px solid #8ea1ba;
+  }
+  
+  
+ .container .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    float: left;
+    border-right:4px solid #8ea1ba;
+    padding-right: 20px;
+  }
+  
+ .container nav ul {
+    list-style: none;
+    float: right;
+    
+ }
+ .container nav ul li{
+    display: inline-block;
+    background-color: black; /* Рожевий колір блоку */
+  padding: 10px 25px; /* Збільшення простору навколо тексту */
+  border-radius: 5px; /* Закруглені кути */
+
+ } 
+ .container nav ul li a {
+    color: #fff;
+    font-size: 15px;
+ } 
+ .container nav ul li:hover {
+    transform: translateY(4px);
+    background-color: rgb(234, 121, 23);
+    transition: all 1000ms ease;
+ }
+ 
+ main {
+    background-color: #435a79;
+    background-position: center center;
+    width: 1100px;
+    height: 750px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 5px
+
+ }
+ 
+
+
+ footer {
+    width: 100%;
+    height: 200px;
+    background-color: #192637;
+    border-top:4px solid #768ba8;
+
+ }
+ footer .social-buttons a:hover  {
+    transform: translateY(-10px);
+}
+footer .social-buttons {
+    font-size: 35px;
+    color: rgb(214, 89, 6);
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+}
