@@ -23,7 +23,7 @@
   .container {
     width: 1400px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 15px 0;
 
 
   }
@@ -83,18 +83,69 @@
 
  footer {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #192637;
     border-top:4px solid #768ba8;
 
  }
- footer .social-buttons a:hover  {
-    transform: translateY(-10px);
-}
-footer .social-buttons {
-    font-size: 35px;
-    color: rgb(214, 89, 6);
-}
-.fa-facebook-f:before {
-    content: "\f39e";
-}
+footer .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    float: left;
+    margin-left: 40px;
+    margin-top: 140px;
+    
+  }
+ footer #footer_center {
+    width: 900px;
+    height: 130px;
+    background-position: center center;
+    margin-left: 15%;
+    margin-top: 8%;
+    float: left;
+ }
+ #footer_down {
+    width: 900px;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 250px;
+    margin-left: 300px;
+    /* position: absolute;
+    right: 100px;
+    bottom: 200px; */
+    
+ }
+ .sociable_buttons {
+    display: inline-block;
+    list-style: none;
+    float: left; 
+    
+ }
+
+ .Upp {
+    font-size: 18px;
+    font-weight: 500;
+ }
+ footer ul li, footer ul li a {
+    list-style: none;
+    color: #768ba8;
+    font-size: 14px;
+    margin: 15px 0 ;
+
+ }
+ footer ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ #first_div, #second_div {
+    float: left;
+    margin-right: 120px;
+
+ }
+ #second_div {
+    float: left;
+    margin-top: 27px;
+ }
+
+ 
