@@ -22,7 +22,7 @@
     color: aliceblue;
   }
   .container {
-    
+    /* width: 1400px; */
     margin: 0 auto;
     padding: 15px 0;
 
@@ -46,22 +46,40 @@
   }
   
  .container nav ul {
+  margin-top: 1%;
     list-style: none;
     float: right;
     
+    
  }
- .container nav ul li{
-  display: inline-block;
+ .container nav ul li {
+  display: inline;
+
+ }
+ 
+ .container nav ul li .log_out{
   background-color: black; 
 padding: 10px 25px; 
 border-radius: 5px; 
 
 } 
-.container nav ul li a {
+
+.container nav ul li .session{
+padding: 10px 25px; 
+}
+
+
+.log_out{
   color: #fff;
   font-size: 15px;
-} 
-.container nav ul li:hover {
+
+}
+.session{
+  color: #fff;
+  font-size: 15px;
+
+}
+.container nav ul li .log_out:hover {
   transform: translateY(4px);
   background-color: rgb(234, 121, 23);
   transition: all 1000ms ease;
@@ -247,7 +265,7 @@ footer .logo {
  /* Sign_up */
  body #sign_up {
   width: 50%;
-  height: 55%;
+  height: 50%;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10%;
@@ -264,7 +282,7 @@ footer .logo {
 
  body #sign_in {
   width: 50%;
-  height: 55%;
+  height: 50%;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10%;
@@ -348,33 +366,6 @@ footer .logo {
   background-color: none;
  }
 
- .am_home {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  float: right;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  margin-bottom: 2%;
-
-  
- }
- .am_home:hover {
-color: #8ea1ba;
-text-decoration: underline;
-
- }
- #am_home_1> a{
-  color: #fff;
-  text-decoration: none;
-  float: right;
-  margin-top: 7%;
-  margin-left: 8%;
-  position: absolute;
- }
- #am_home_1>a:hover{
-text-decoration: underline;
-color: #8ea1ba;
- }
+ 
 
  

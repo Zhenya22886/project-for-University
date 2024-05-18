@@ -1,28 +1,35 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayPlanner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_1.css">
 </head>
 <body>
     <header >
         <div class="container">
         <span class="logo", >DayPlanner <img src="Images/3358.png_860-removebg-preview.png" width="45px" height="45px"></span>
+        
         <nav class="header">
             <ul class="nav-links">
-                <li><a href="./sign_in.php" class="sign_in">Sign in</a></li>
-                <li><a href="./sign_up.php" class="sign_up">Sign up</a></li>
-              </ul>
-          </nav>
+                <li class="session"><?= $_SESSION['user']['login'] ?></li>
+                <li><a href="./log_out.php" class="log_out">log out</a></li>
+                
+            </ul>
+         </nav>
         </div>
     </header>
    <main>
     <p id="currentDate"></p>
     <div id="dayOnWeek"></div>
     <div id="main_div">
-        <div id="add_task"onclick="btnclick()">
+        <div id="add_task"onclick="">
             <ul id="Add_Task_Icon">
                 <li><a>+</a></li>
             </ul>
@@ -62,8 +69,7 @@
             <div id="third_div">
                 <p class="Upp">Акаунт </p>
                 <ul>
-                    <li><a href="./sign_in.php">Увійти</a></li>
-                    <li><a href="./sign_up.php">Зареєструватися</a></li>
+                    <li><a href="./log_out.php">вийти</a></li>
                 </ul>
 
 

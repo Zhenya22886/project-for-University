@@ -1,20 +1,23 @@
 <?php
-require_once('./db.php');
+session_start();
+require_once'./conn/connector.php';
 
 $login = $_POST['login'];
-$pass = $_POST['pass'];
+$pass  = md5($_POST['pass']);
 
-if(empty($login) ||empty($pass)){
-    echo"Заповіть усі поля";
-}else {
-    $sql = "SELECT *FROM users WHERE login = '$login' AND pass = '$pass'";
-    $result  = $conn->query($sql);
 
-    if ($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
-            echo "Добро пожаловать". $row['login'];
-        }
-    } else {
-        echo "користувача не знайдено";
-    }
+$check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login' AND `pass` = '$pass' ");
+
+if (mysqli_num_rows($check_user) > 0){
+
+    $user = mysqli_fetch_assoc($check_user);
+    $_SESSION['user']= [
+        "login" => $user['login']
+    ];
+    header('location: ./home.php');
+
+} else {
+    $_SESSION['message1'] = 'Не правильний логін або пароль ';
+    header('Location: ./sign_in.php');
 }
+?>

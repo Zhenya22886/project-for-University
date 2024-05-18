@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +21,15 @@
         <input type="password" placeholder="password" name="pass"><br><br>
         <label for="">повторіть пароль</label> <br>
         <input type="password" placeholder="repeat_password" name="repeatpass"><br><br>
-        <button id="BtnSignUp">Зареєструватися</button>
+        <p id="warn">
+            <?php
+             echo $_SESSION['message'];
+             unset($_SESSION['message']);
+             ?>
+        </p>
+        <button type="submit" id="BtnSignUp">Зареєструватися</button>
+        <label id="am_home_1"><a href="./index.html">на головну</a></label>
+
     </form>
     </div>
     
