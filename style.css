@@ -52,9 +52,9 @@
  }
  .container nav ul li{
     display: inline-block;
-    background-color: black; /* Рожевий колір блоку */
-  padding: 10px 25px; /* Збільшення простору навколо тексту */
-  border-radius: 5px; /* Закруглені кути */
+    background-color: black; 
+  padding: 10px 25px; 
+  border-radius: 5px; 
 
  } 
  .container nav ul li a {
@@ -247,9 +247,88 @@ footer .logo {
  /* Sign_up */
  body #sign_up {
   width: 50%;
-  height: 30%;
-  margin: 25%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
   background-color: #435a79;
+  border-radius: 5px;
+  border: 4px solid #8ea1ba ;
+ }
+ body #sign_up form {
+  height: 100%;
+  margin-left: 10%;
+  padding-top: 5%;
+ 
+ }
+
+ body #sign_in {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  background-color: #435a79;
+  border-radius: 5px;
+  border: 4px solid #8ea1ba ;
+
+ }
+ body #sign_in form {
+  height: 100%;
+  margin-left: 10%;
+  padding-top: 10%;
+  
+ }
+ body #sign_in form a {
+  color: #fff;
+  
+  
+ }
+ body #sign_in form a:hover {
+  color: #8ea1ba;
+  text-decoration: underline;
+  
+ }
+ #BtnSignUp {
+  display: inline-block;
+  background-color: black;
+  padding: 10px 25px;
+  border-radius:5px ;
+  color: #fff;
+    font-size: 15px;
+    margin-top:4% ;
+    margin-left:35% ;
+    cursor: pointer;
+ }
+
+
+ #BtnSignIn {
+  display: inline-block;
+  background-color: black;
+  padding: 10px 25px;
+  border-radius:5px ;
+  color: #fff;
+    font-size: 15px;
+    margin-top:8% ;
+    margin-left:35% ;
+    cursor: pointer;
+ }
+ #BtnSignUp:hover{
+  transform: translateY(4px);
+  background-color: rgb(234, 121, 23);
+  transition: all 1000ms ease;
+ }
+ #BtnSignIn:hover{
+  transform: translateY(4px);
+  background-color: rgb(234, 121, 23);
+  transition: all 1000ms ease;
+ }
+ form input {
+  border: unset;
+  border-bottom: 3px solid #8ea1ba;
+  background-color: #435a79;
+  color: #fff;
+  outline: none;
  }
 
  

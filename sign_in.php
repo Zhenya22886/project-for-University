@@ -7,13 +7,20 @@
     <title>Sign in</title>
 </head>
 <body>
+    
+    <div id="sign_in">
     <form action="./login.php" method="post">
-        <label for="">Логін</label>
-        <input type="text" placeholder="login" name="login">
-        <label for="">Пароль</label>
-        <input type="password" placeholder="password" name="pass">
-        <button submit>Увійти</button>
+        <label for="">Логін</label> <br>
+        <input type="text" placeholder="login" name="login"> <br><br>
+        <label for="">Пароль</label> <br>
+        <input type="password" placeholder="password" name="pass"> <br> <br>
+        <p>
+            У вас немає акаунту - <a href="./sign_up.php">Зареєструватися</a>
+        </p>
+        <button id="BtnSignIn">Увійти</button> <br><br>
+        
     </form>
+</div>
     
 </body>
 </html>

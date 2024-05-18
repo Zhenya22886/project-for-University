@@ -10,10 +10,13 @@
 <body>
     <div id="sign_up">
     <form action="./register.php" method="post">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <input type="text" placeholder="repeat_password" name="repeatpass">
-        <button submit>Зареєструватися</button>
+    <label for="">Логін</label> <br>
+        <input type="text" placeholder="login" name="login"><br><br>
+        <label for="">Пароль</label> <br>
+        <input type="password" placeholder="password" name="pass"><br><br>
+        <label for="">повторіть пароль</label> <br>
+        <input type="password" placeholder="repeat_password" name="repeatpass"><br><br>
+        <button id="BtnSignUp">Зареєструватися</button>
     </form>
     </div>
     
