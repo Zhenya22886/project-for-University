@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DayPlanner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +12,33 @@
         <span class="logo", >DayPlanner <img src="Images/3358.png_860-removebg-preview.png" width="45px" height="45px"></span>
         <nav class="header">
             <ul class="nav-links">
-                <li><a href="#" class="Sign in">Sign in</a></li>
-                <li><a href="#" class="Sign up">Sign up</a></li>
+                <li><a href="./sign_in.php" class="Sign in">Sign in</a></li>
+                <li><a href="./sign_up.php" class="Sign up">Sign up</a></li>
               </ul>
           </nav>
         </div>
     </header>
    <main>
+    <p id="currentDate"></p>
+    <div id="dayOnWeek"></div>
+    <div id="main_div">
+        <div id="add_task"onclick="btnclick()">
+            <ul id="Add_Task_Icon">
+                <li><a>+</a></li>
+            </ul>
+        </div>
+
+    </div>
+    
+
+
+    <div class="social-container">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+        </ul>
       
    </main>
     <footer>
@@ -55,6 +75,7 @@
         
 
     </footer>
+    <script src="index.js"></script>
     
 </body>
 </html>
