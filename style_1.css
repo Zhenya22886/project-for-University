@@ -86,34 +86,83 @@ padding: 10px 25px;
 }
  /* main  */
  
- main {
-    background-color: #435a79;
-    background-position: center center;
-    width: 70%;
-    height: 900px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* border-radius: 10 */
- }
- main p {
-   width: 100%;
-   height: 40px ;
-   text-align: center ;
-   padding-top: 20px;
-   background-color: #192637;
- }
- #dayOnWeek {
-   width: 100%;
-   height: 80px;
-   border-top:4px solid #768ba8;
-   border-bottom:4px solid #768ba8;
 
+ #currentDate{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 100px;
+ height: 40px ;
+ text-align: center ;
+ padding-top: 20px;
+ background-color: #192637;
  }
+  /* dayOnWeekElements */ 
+  #dayOnWeek {
+    margin-left: 15%;
+  margin-right: 15%;
+  height: 70px;
+  border-top: 4px solid #768ba8;
+  border-bottom: 4px solid #768ba8;
+  background-color: #435a79;
+  }
+  
+  #dayOnWeekElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #dayOnWeekElements > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #00B5F5, #002A8F);
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    margin: 5px 4%;
+    transition: all 265ms ease-out;
+    position: relative;
+  }
+  
+  #dayOnWeekElements > li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #dayOnWeekElements > li:hover {
+    transform: scale(1.5);
+    color: #00B5F5;
+    background: -webkit-linear-gradient(45deg, #00B5F5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in}
+  
+  .CurrentDay {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 45%;
+    padding-top: 5px;
+  }
+ 
  #main_div {
-   width: 100%;
-   height: 600px;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 670px;
+   background-color: #435a79;
+ }
+
+ .main_div {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 670px;
+   background-color: #435a79;
  }
  
  #add_task {
@@ -150,8 +199,8 @@ padding: 10px 25px;
 }
 
  .social-container {
-   width: 100%;
-   margin-top: 50px;
+   margin: 0 15%;
+  margin-bottom: 100px;
    text-align: center;
    position: relative;
    border-top: 4px solid #768ba8;
@@ -366,6 +415,48 @@ footer .logo {
   background-color: none;
  }
 
+ /* Task */
+ .block {
+  background-color: #192637;
+  width: 40%;
+  height: 30%;
+  border-radius: 10px;
+  position:absolute;
+  margin-top: 20%;
+  margin-left: 15%;
+
+}
+.removeBtn {
+  border: unset;
+  color: #fff;
+  background-color: #192637;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 1%;
+  cursor: pointer;
+  float: left;
+}
+.CreateBtn{
+  border: unset;
+  color: #fff;
+  background-color: #192637;
+  font-size: 15px;
+  margin-right: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  float: right;
+
+}
+.Task {
+  width: 25%;
+  height: 10%;
+  background-color: #192637;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-left: 15%;
+  position: relative; 
+  float: left;
+}
  
 
  

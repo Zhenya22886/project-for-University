@@ -23,9 +23,9 @@ session_start();
         </label>
     <form action="./login.php" method="post">
         <label for="">Логін</label> <br>
-        <input type="text" placeholder="login" name="login"> <br><br>
+        <input type="text"  name="login"> <br><br>
         <label for="">Пароль</label> <br>
-        <input type="password" placeholder="password" name="pass"> <br> <br>
+        <input type="password"  name="pass"> <br> <br>
         <p id="warn_1">
         <?php
              echo $_SESSION['message1'];

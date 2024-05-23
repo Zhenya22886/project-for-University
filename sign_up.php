@@ -16,11 +16,11 @@ session_start();
     <div id="sign_up">
     <form action="./register.php" method="post">
     <label for="">Логін</label> <br>
-        <input type="text" placeholder="login" name="login"><br><br>
+        <input type="text"  name="login"><br><br>
         <label for="">Пароль</label> <br>
-        <input type="password" placeholder="password" name="pass"><br><br>
+        <input type="password"  name="pass"><br><br>
         <label for="">повторіть пароль</label> <br>
-        <input type="password" placeholder="repeat_password" name="repeatpass"><br><br>
+        <input type="password"  name="repeatpass"><br><br>
         <p id="warn">
             <?php
              echo $_SESSION['message'];
