@@ -37,6 +37,7 @@ session_start();
     </div>
     <div id="CurrentDiv">
      <div id="main_div">
+        <p class="CurrentDay"> Оберіть день, щоб додати завдання</p>
         <div id="add_task">
             <ul id="Add_Task_Icon">
                 <li><a>+</a></li>
